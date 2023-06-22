@@ -51,9 +51,9 @@ const OrderForm = () => {
 
     setTimeout(() => {
     if (selectedOption === '1') {
-      setImage('/src/images/MLOVER.png');
+      setImage('/src/images/MLOVER1.png');
     } else if (selectedOption === '2') {
-      setImage('/src/images/VEGETARIAN.png');
+      setImage('/src/images/VEGETARIAN2.png');
     } else if (selectedOption === '3') {
       setImage('/src/images/BEEFx3.png'); 
     } else {

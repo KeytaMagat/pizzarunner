@@ -1,3 +1,4 @@
+import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -5,10 +6,10 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import Avatar from "@mui/material/Avatar";
-import { grey, yellow } from '@mui/material/colors';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { Grid } from "@mui/material";
 import { useNavigate } from 'react-router-dom';
+import NavLink from '../../ui/NavLink';
+
 
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -58,18 +59,19 @@ export default function Header() {
               <Box sx={{ letterSpacing: 6, m: 1 }}> <h3>About</h3> </Box>
             </Button>
           </Stack>
+          
           <Container maxWidth="fixed" 
             style={{
-              display: "flex", 
-              flexDirection: "row-reverse", 
+              display: "flex",
+              justifyContent: "right" 
               // backgroundColor: "red"
             }}>
+              <NavLink/>
             <Avatar onClick={() => navigate('login')}
                 sx={{ 
                 // bgcolor: "grey", 
                 paddingBlock: 2, 
-                paddingX: 2, 
-                flexDirection: "row-reverse"
+                paddingX: 2
               }}>
                 <AccountCircleIcon sx={{width: 50, height: 50}}/>
             </Avatar>

@@ -1,15 +1,11 @@
-import LHeader from "./LHeader";
 import Button_LandingOrder from "../../ui/Button_LandingOrder";
 import { Container, Box, } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import LBody_2 from './LBody_2';
-import LBody_3 from './LBody_3';
 
-export default function LBody() {
+export default function LBody_3() {
   return (
-    <div className="meatlover" id="meatlover">
-      <LHeader/>
-      <Grid className='Lbody-container'>
+    <div className="beefx3" id="beefx3">
+      <Grid className='L3body-container'>
         <Container maxWidth="fixed"
           style={{
             // backgroundColor: "red",
@@ -47,15 +43,12 @@ export default function LBody() {
                 display={"flex"} 
                 justifyContent={"left"}
               >
-                <img style={{width:830}} src="/src/images/MLOVER1.png" />
+                <img style={{width:850}} src="/src/images/BEEFx3.png" />
               </Box>
             </Grid>
           </Grid>
         </Container>
       </Grid>
-      
-      <LBody_2/>
-      <LBody_3/>
     </div>
   );
 }
