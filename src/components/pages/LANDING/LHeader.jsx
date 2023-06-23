@@ -8,14 +8,28 @@ import Stack from '@mui/material/Stack';
 import Avatar from "@mui/material/Avatar";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { useNavigate } from 'react-router-dom';
-import NavLink from '../../ui/NavLink';
-
+import { Menu, MenuItem } from '@mui/material';
+import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Header() {
   
+  const [click, setClick] = useState(false)
+  const closeMenu = () => setClick(false)
+
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+
   const navigate = useNavigate()
 
   return (
@@ -52,21 +66,58 @@ export default function Header() {
             <Button  onClick={() => navigate('')}>
               <Box sx={{ letterSpacing: 6, m: 1 }}> <h3>Home</h3> </Box>
             </Button>
-            <Button>
+            <Button id="basic-button"
+              aria-controls={open ? 'basic-menu' : undefined}
+              aria-haspopup="true"
+              aria-expanded={open ? 'true' : undefined}
+              onClick={handleClick}>
               <Box sx={{ letterSpacing: 6, m: 1 }}> <h3>Menu</h3> </Box>
             </Button>
+            <Menu
+              id="basic-menu"
+              anchorEl={anchorEl}
+              open={open}
+              onClose={handleClose}
+              MenuListProps={{
+                'aria-labelledby': 'basic-button',
+              }}
+            >
+              <Link to="meatlover"
+                spy={true} 
+                smooth={true} 
+                offset={-100}
+                duration={700}
+                onClick={closeMenu}>
+                  <MenuItem onClick={handleClose}> Meat Lover </MenuItem>
+              </Link>
+              <Link to="vegetarian"
+                spy={true} 
+                smooth={true} 
+                offset={-100}
+                duration={700}
+                onClick={closeMenu}>
+                  <MenuItem onClick={handleClose}> Vegetarian </MenuItem>
+              </Link>
+              <Link to="beefx3"
+                spy={true} 
+                smooth={true} 
+                offset={-100}
+                duration={700}
+                onClick={closeMenu}>
+                  <MenuItem onClick={handleClose}> Beef-Beef-Beef </MenuItem>
+              </Link>
+            </Menu>
             <Button >
               <Box sx={{ letterSpacing: 6, m: 1 }}> <h3>About</h3> </Box>
             </Button>
           </Stack>
-          
+
           <Container maxWidth="fixed" 
             style={{
               display: "flex",
               justifyContent: "right" 
               // backgroundColor: "red"
             }}>
-              <NavLink/>
             <Avatar onClick={() => navigate('login')}
                 sx={{ 
                 // bgcolor: "grey", 
