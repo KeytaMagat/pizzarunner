@@ -5,7 +5,6 @@ import Ordering from './components/pages/ORDER/Ordering'
 import LoginPage from './components/pages/LOGIN/LoginPage'
 import NothingHere from './components/pages/NothingHere'
 import SampTExt from './components/ui/SampTExt'
-import LBody_2 from './components/pages/LANDING/LBody_2'
 
 export default function App() {
   return (

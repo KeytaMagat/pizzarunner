@@ -39,7 +39,7 @@ export default function Header() {
         paddingBlock: "2vh",
         boxDecorationBreak: "revert"
       }}>
-      <Container maxWidth="fixed" 
+      <Container maxWidth="xl" 
         style={{
           paddingInline: "10vh",
           display: "block"

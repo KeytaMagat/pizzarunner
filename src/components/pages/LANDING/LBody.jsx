@@ -2,12 +2,13 @@ import LHeader from "./LHeader";
 import Button_LandingOrder from "../../ui/Button_LandingOrder";
 import { Container, Box, } from "@mui/material";
 import Grid from "@mui/material/Unstable_Grid2";
-import LBody_2 from './LBody_2';
-import LBody_3 from './LBody_3';
+import MLpage from "./MLpage";
+import VTpage from "./VTpage";
+import BFpage from "./BFpage";
 
 export default function LBody() {
   return (
-    <div className="meatlover" id="meatlover">
+    <div>
       <LHeader/>
       <Grid className='Lbody-container'>
         <Container maxWidth="fixed"
@@ -54,8 +55,9 @@ export default function LBody() {
         </Container>
       </Grid>
       
-      <LBody_2/>
-      <LBody_3/>
+      <MLpage/>
+      <VTpage/>
+      <BFpage/>
     </div>
   );
 }

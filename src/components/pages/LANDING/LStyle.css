@@ -19,25 +19,33 @@
     height: 950px;
 }
 
-.L2body-container {
-    background-image: url("/src/images/CDesign_2.png");
-    background-size:fixed;
+.MLpage {
+    background-image: url("/public/newimages/BG_Black.png");
+    background-size:cover;
     background-repeat: no-repeat;
-    
     
     /* width: 100%; */
     height: 950px;
 }
 
-.L3body-container {
-    background-image: url("/src/images/CDesign_3.png");
-    background-size:fixed;
+.VTpage {
+    background-image: url("/public/newimages/BG_Yellow.png");
+    background-size:cover;
     background-repeat: no-repeat;
-    
     
     /* width: 100%; */
     height: 950px;
 }
+
+.BFpage {
+    background-image: url("/public/newimages/BG_Red.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+    /* width: 100%; */
+    height: 950px;
+}
+
 
 .imgLogo {
     max-width: 8vh;
