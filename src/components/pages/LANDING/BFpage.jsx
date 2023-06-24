@@ -7,7 +7,7 @@ export default function BFpage() {
   return (
     <div className="beefx3" id="beefx3" >
       <Grid className='BFpage' display={"grid"} >
-        <Container sx={{paddingTop: 10}}>
+        <Container sx={{paddingTop: 15}}>
           <img src="./newimages/BFpage/TEXT1.png" alt="" />
         </Container>
         <Grid display={"flex"}>
@@ -31,7 +31,7 @@ export default function BFpage() {
                 justifyContent: "right"
               }}
           >
-            <img style={{width: 1150}} src="./newimages/BFpage/food.png" alt="" />
+            <img className="bffood" style={{width: 1150}} src="./newimages/BFpage/food.png" alt="" />
           </Container>
         </Grid>
       </Grid>

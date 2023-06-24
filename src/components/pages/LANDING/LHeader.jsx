@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './LStyle.css'
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -33,13 +34,13 @@ export default function Header() {
   const navigate = useNavigate()
 
   return (
-    <AppBar position="sticky" 
+    <AppBar className='HeadBar' position="sticky" 
       style={{
         backgroundColor: "#E9E9E9",
         paddingBlock: "2vh",
-        boxDecorationBreak: "revert"
-      }}>
-      <Container maxWidth="xl" 
+        boxDecorationBreak: "revert"}}
+      >
+      <Container className='AppCon' maxWidth="xl" 
         style={{
           paddingInline: "10vh",
           display: "block"

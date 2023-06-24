@@ -16,7 +16,7 @@ export default function VTpage() {
             
           }}>
             <Box>
-              <img style={{width: 566, height: 392}} src="./newimages/VTpage/VG_TEXT.png" alt="Vegetarian Food"/>
+              <img className="vttext" style={{width: 566, height: 392}} src="./newimages/VTpage/VG_TEXT.png" alt="Vegetarian Food"/>
                 <Box display={"flex"} justifyContent={"center"} marginTop={10}>
                     <img style={{width:250, height:90}} src="./newimages/Button.png" alt="button"/>
                 </Box>
@@ -28,7 +28,7 @@ export default function VTpage() {
               paddingBlock: 50,
               display: "flex"
           }}>
-            <img style={{width: 900, height: 830}} src="./newimages/VTpage/food.png" alt="Vegetarian Food"/>
+            <img className="vtfood" style={{width: 900, height: 830}} src="./newimages/VTpage/food.png" alt="Vegetarian Food"/>
         </Container>
       </Grid>
     </div>

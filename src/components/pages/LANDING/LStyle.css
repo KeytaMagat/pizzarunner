@@ -16,7 +16,8 @@
     background-repeat: no-repeat;
     
     /* width: 100%; */
-    height: 950px;
+    /* height: 950px; */
+    max-width: 1920px;
 }
 
 .MLpage {
@@ -68,3 +69,51 @@
 
 }
 
+.mlover1 {
+    max-width: 830;
+}
+
+@media (max-width: 1440px) {
+    .Lbody-container {
+        max-width: 1440px;
+    }
+
+    .Ltext {
+        max-width: 30em;
+    }
+
+    .textF p {
+        font-size: large;
+    }
+
+    .mlover1 {
+        max-width: 40em;
+    }
+
+    .MLpage .mlfood {
+        max-width: 50em;
+        max-height: 50em;
+    }
+
+    .MLpage .mltext {
+        max-width: 30em;
+        max-height: 20em;
+    }
+
+    .VTpage .vtfood {
+        max-width: 40em;
+        max-height: 40em;
+
+        margin-block: 5em;
+    }
+
+    .VTpage .vttext {
+        max-width: 30em;
+        max-height: 30em;
+    }
+
+    .BFpage .bffood {
+        max-width: 50em;
+        max-height: 50em;
+    }
+}

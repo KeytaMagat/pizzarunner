@@ -14,7 +14,7 @@ export default function MLpage() {
             display: "flex",
             paddingLeft: 0
           }}>
-            <img src="./newimages/MLpage/food.png" alt="Meat Lover Food"/>
+            <img className="mlfood" src="./newimages/MLpage/food.png" alt="Meat Lover Food"/>
         </Container>
         <Container
             style={{ 
@@ -29,7 +29,7 @@ export default function MLpage() {
                 justifyContent: "center"
                 
             }}>
-                <img style={{width:598, height:348}} src="./newimages/MLpage/ML_TEXT.png" alt="Meat Lover Food"/>
+                <img className="mltext" style={{width:598, height:348}} src="./newimages/MLpage/ML_TEXT.png" alt="Meat Lover Food"/>
             </Box>
             <Box display={"flex"} justifyContent={"center"}>
                 <img style={{width:250, height:90}} src="./newimages/Button.png" alt="button"/>

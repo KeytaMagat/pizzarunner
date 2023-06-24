@@ -14,6 +14,7 @@ export default function LBody() {
         <Container maxWidth="fixed"
           style={{
             // backgroundColor: "red",
+
             paddingInline: "15vh",
             display: "flex"
           }}>
@@ -21,7 +22,7 @@ export default function LBody() {
           <Grid container mt={10} display={"flex"} direction={"row"} spacing={10}>
             <Grid xs={6}>
               <Box >
-                <img src="/src/images/text-image/Thead.png" />
+                <img className="Ltext" src="/src/images/text-image/Thead.png" />
               </Box>
               <Box className="textF" mt={2} pl={2}>
                 <p>
@@ -30,9 +31,11 @@ export default function LBody() {
                   and feel the wonder taste of this awesome Pizza. <br />
                   </p>
               </Box>
-              <Box display={"flex"}
-                  pl={17}
-                  mt={12}
+              <Box className="btnorder"
+                display={"flex"}
+                pl={17}
+                mt={15}
+                pb={15}
               >
                 <Button_LandingOrder />
               </Box>
@@ -46,9 +49,9 @@ export default function LBody() {
               </Box> */}
               <Box mt={2} 
                 display={"flex"} 
-                justifyContent={"left"}
+                justifyContent={"right"}
               >
-                <img style={{width:830}} src="/src/images/MLOVER1.png" />
+                <img className="mlover1" src="/src/images/MLOVER1.png" />
               </Box>
             </Grid>
           </Grid>
